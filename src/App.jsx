@@ -30,7 +30,7 @@ class App extends React.Component {
     }
   }
 
-  async componentDidMount() {
+  componentDidMount() {
     setTimeout(async () => {
       const response = await api('https://5e82ac6c78337f00160ae496.mockapi.io/api/v1/contacts')
       this.setState({ contacts: response, showContacts: response, isloading: false });
