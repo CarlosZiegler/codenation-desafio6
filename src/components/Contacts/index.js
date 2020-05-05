@@ -1,6 +1,7 @@
 import React from "react"
 import Lottie from 'react-lottie';
 
+
 import Contact from '../Contact'
 
 import loadingData from '../../assets/img/loading.json'
@@ -30,7 +31,7 @@ class Contacts extends React.Component {
 							width={"100%"}
 						/>
 					</div>}
-				{contactList && contactList.map(contact =>
+				{contactList?.map(contact =>
 					<Contact data={contact} key={contact.id} isHeader={false} />)}
 			</section>
 
